@@ -5,17 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Comfortaa" />
     <title>Document</title>
 </head>
 <header>
     <!--make this split into two lines-->
+    <h1>Spli
+        <br>
+        tter
+    </h1>
 </header>
 <body>
+    <div class="grid-container1">
+        <div class="input-form">
  <!--use html forms for bill amount, pull down box, number of customers -->
  <!--buttom used for submit box and reset box; give each button a unique id-->  
  <form id="data-entry">
 <!--element used for bill amount: input type: ?-->
-<label for="bill-amount">Bill Amount</label>
+<label for="bill-amount">Bill Amount:</label>
+<br>
 <input type="number" name="bill-amount"/>
 <br>
 <!--for pull down box, use select element and option element as child (example on w3schools html form elements page)-->
@@ -29,17 +37,22 @@
 </select>
 <br>
 <!--element used for number of customers: input type: number-->
-<label for="customers">Number Of Customers</label>
+<label for="customers">Number Of Customers:</label>
+<br>
 <input type="number" name="customers"/>
 <br>
 <!--use output element; refer to output tag video in bookmarks-->
 <!--for submit button: use input type submit; specify form handler in action attribute-->
+</div>
 <!--for reset button use attribut multiple and input types button and reset-->
  <button id="reset" type="reset">Reset</button>
  </form> 
  <!--seperate form for tip box-->
- 
-<!--<form id="display-form">
+ <div class="output">
+    <!--<output box-->
+        
+    </div>
+
     
 
 
@@ -47,8 +60,8 @@
 
 
 
-</form>-->
-
+<!--</form>-->
+</div>
 <!--my name? slash person?-->
 
  <script src="app.js"></script>
