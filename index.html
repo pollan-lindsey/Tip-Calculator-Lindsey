@@ -1,3 +1,5 @@
+<!--re-do divs-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,16 +18,17 @@
     </h1>
 </header>
 <body>
-    <div class="grid-container1">
+    <div class="grid-container">
         <div class="input-form">
  <!--use html forms for bill amount, pull down box, number of customers -->
  <!--buttom used for submit box and reset box; give each button a unique id-->  
  <form id="data-entry">
-<!--element used for bill amount: input type: ?-->
+
 <label for="bill-amount">Bill Amount:</label>
 <br>
 <input type="number" name="bill-amount"/>
 <br>
+
 <!--for pull down box, use select element and option element as child (example on w3schools html form elements page)-->
 <label for="tip-amount">Choose tip amount: </label>
 <select id="tip-amount" name="tip-amount">
@@ -44,13 +47,12 @@
 <!--use output element; refer to output tag video in bookmarks-->
 <!--for submit button: use input type submit; specify form handler in action attribute-->
 </div>
-<!--for reset button use attribut multiple and input types button and reset-->
- <button id="reset" type="reset">Reset</button>
+
  </form> 
  <!--seperate form for tip box-->
  <div class="output">
     <!--<output box-->
-        
+
     </div>
 
     
@@ -63,6 +65,9 @@
 <!--</form>-->
 </div>
 <!--my name? slash person?-->
+
+<!--reset must apply to input and output-->
+<button id="reset" type="reset">Reset</button>
 
  <script src="app.js"></script>
 </body>

@@ -1,9 +1,21 @@
 body {
 background-color: #d3eeee;
-font-family: 'Comfortaa', cursive; /* figure out a font similar to this */
+font-family: 'Comfortaa', cursive; 
 }
 
+.grid-container {
+    display: grid;
+    /*two columns three rows
+    minmax?
+    */
+}
 
 .input-form {
     background: white;
+    border-radius: 15px;
+    padding-left: 30px; 
+    padding-top: 75px;
+    /*height: 360px;*/
+    
 }
+/*put each item in a seperate div to get tip amount shorter than other two*/
