@@ -24,25 +24,31 @@
  <!--buttom used for submit box and reset box; give each button a unique id-->  
  <form id="data-entry">
 
+<div id="bill-amount">
 <label for="bill-amount">Bill Amount:</label>
 <br>
 <input type="number" name="bill-amount"/>
+</div>
 <br>
 
 <!--for pull down box, use select element and option element as child (example on w3schools html form elements page)-->
+<div id="tip-amount"> 
 <label for="tip-amount">Choose tip amount: </label>
-<select id="tip-amount" name="tip-amount">
+<select id="tip-amount-select" name="tip-amount">
     <option value="five-percent">5%</option>
     <option value="ten-percent">10%</option>
     <option value="fifteen-percent">15%</option>
     <option value="twentyfive-percent">25%</option>
     <option value="fifty-percent">50%</option>
 </select>
+</div>
 <br>
 <!--element used for number of customers: input type: number-->
+<div id="customer-amount">
 <label for="customers">Number Of Customers:</label>
 <br>
 <input type="number" name="customers"/>
+</div>
 <br>
 <!--use output element; refer to output tag video in bookmarks-->
 <!--for submit button: use input type submit; specify form handler in action attribute-->
