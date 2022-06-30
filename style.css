@@ -3,14 +3,21 @@ background-color: #d3eeee;
 font-family: 'Comfortaa', cursive; 
 }
 
-.grid-container {
+/*.grid-container {
     display: grid;
-    /*two columns three rows
+    two columns three rows
     minmax?
-    */
+    
+    
+} */
+
+header {
+    text-align: center;
 }
 
-.input-form {
+.input-output {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     background: white;
     border-radius: 15px;
     padding-left: 30px; 
@@ -19,3 +26,11 @@ font-family: 'Comfortaa', cursive;
     
 }
 /*put each item in a seperate div to get tip amount shorter than other two*/
+
+#output {
+    background: darkslategray;
+}
+
+#reset {
+    background-color: lightskyblue;
+}
