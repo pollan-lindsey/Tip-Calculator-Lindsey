@@ -12,15 +12,14 @@
 </head>
 <header>
     <!--make this split into two lines-->
-    <div class="grid-container">
     <h1>Spli
         <br>
         tter
     </h1>
 </header>
 <body>
-    
-        <div class="input-output">
+    <div class="grid-container">
+        <div class="input-section">
  <!--use html forms for bill amount, pull down box, number of customers -->
  <!--buttom used for submit box and reset box; give each button a unique id-->  
  <form id="data-entry">
@@ -42,19 +41,20 @@
     <option value="twentyfive-percent">25%</option>
     <option value="fifty-percent">50%</option>
 </select>
-<!--</div>-->
+
 <br>
 <!--element used for number of customers: input type: number-->
-<!--<div id="customer-amount">-->
 <label for="customers">Number Of Customers:</label>
 <br>
 <input type="number" name="customers"/>
-<!--</div>-->
+
 <br>
 <!--use output element; refer to output tag video in bookmarks-->
 <!--for submit button: use input type submit; specify form handler in action attribute-->
 <button id="submit" type="submit">Submit</button>
 
+</form> 
+</div>
 <div id="output">
     <!--<output box-->
         <h2 id="tip-amount-output">Tip Amount</h2>
@@ -64,31 +64,10 @@
         <h2 id="total-bill">Total Amount</h2>
         <h3 id="total-per-person">$0.00</h3>
 
-    </div>
-
- </form> 
-</div>
  <button id="reset" type="reset">Reset</button>
-        </div>
- <!--seperate form for tip box-->
 
-
-    
-
-
-
-
-
-
-<!--</form>-->
-
-<!--my name? slash person?-->
-
-<!--reset must apply to input and output-->
-
-
-
-
+    </div>
+</div>
  <script src="app.js"></script>
 </body>
 

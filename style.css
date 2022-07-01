@@ -3,21 +3,19 @@ background-color: #d3eeee;
 font-family: 'Comfortaa', cursive; 
 }
 
-/*.grid-container {
+.grid-container {
     display: grid;
-    two columns three rows
-    minmax?
+    grid-template-columns: 3fr 1fr ;
+    justify-content: space-around;
     
-    
-} */
+} 
 
 header {
     text-align: center;
 }
 
-.input-output {
+.input-section {
     display: grid;
-    grid-template-columns: 2fr 1fr;
     background: white;
     border-radius: 15px;
     padding-left: 30px; 
@@ -28,7 +26,12 @@ header {
 /*put each item in a seperate div to get tip amount shorter than other two*/
 
 #output {
-    background: darkslategray;
+    background: rgb(12, 24, 24); 
+    color: rgba(255, 255, 255, 0.671);
+    border-radius: 15px;
+    padding-top: 30px;
+    padding-left: 20px;
+
 }
 
 #reset {
