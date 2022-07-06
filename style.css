@@ -4,36 +4,68 @@ font-family: 'Comfortaa', cursive;
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: 3fr 1fr ;
-    justify-content: space-around;
+    background: white;
+    width: 750px;
+    height: 375px;
+    display: flex;
+    justify-content: space-between; 
+    border-radius: 15px;
+    margin-left: 275px;
+    margin-right: 350px;
     
 } 
 
 header {
     text-align: center;
+    margin-bottom: 125px;
 }
 
 .input-section {
-    display: grid;
-    background: white;
-    border-radius: 15px;
-    padding-left: 30px; 
-    padding-top: 75px;
-    /*height: 360px;*/
-    
+    padding-top: 100px;
+   padding-left: 30px;
+   
 }
-/*put each item in a seperate div to get tip amount shorter than other two*/
+
 
 #output {
-    background: rgb(12, 24, 24); 
+    width: 325px;
+    background: rgb(19, 58, 49); 
     color: rgba(255, 255, 255, 0.671);
     border-radius: 15px;
+    margin-top: 30px;
+    margin-right: 15px;
+    margin-bottom: 30px;
     padding-top: 30px;
     padding-left: 20px;
+    
+    
 
 }
+
+#submit {
+    cursor: pointer;
+    height: 30px;
+    width: 70px;
+    margin-top: 20px;
+    margin-left: 40px;
+    background-color: #3EB489;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 12px;
+}
+/*.reset-button {
+background-color: aquamarine;
+}*/
 
 #reset {
     background-color: lightskyblue;
+    cursor: pointer;
+    position: relative;
+    left: 900px;
+    margin-top: 50px;
+    height: 40px;
+    width: 100px;
+    border-radius: 15px;
+    border: none;
 }

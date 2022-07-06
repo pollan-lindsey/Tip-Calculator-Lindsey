@@ -17,7 +17,6 @@
 
 ///////////
 
-//set up some empty arrays
 
 //get elements from HTML
 let billAmount = document.getElementById('bill-amount');
@@ -28,18 +27,22 @@ let totalPerPerson = document.getElementById('total-per-person');
 let submitButton = document.getElementById('submit');
 let resetButton = document.getElementById('reset');
 
-
+//.value brings anything the user puts in
 //turn bill, tip (percentage), and customer into a number
 
-let billInt = parseInt (billAmount, 10);
-//console.log(billInt);
+let billInt = parseInt (billAmount.value, 10);
 //turn tip into a number:
 let tipInt = parseInt (tipAmount.value, 10);
 //turn tip into a percentage
 let tipPercent = tipInt / 100
 //turn customer into a number
-let custInt = parseInt (custAmount, 10);
+let custInt = parseInt (custAmount.value, 10);
+//put above in below function
 
+//get customer vlaues from input
+function getInputValues(){
+
+}
 //calculate the tip
 function tipPerPerson(bill, customer){
 //calculating tip:
@@ -63,5 +66,5 @@ totalBill( )
 //add event listener to submit
 //run the numbers through math equation
 //when submit button is clicked, put all information in output boxes
-submitButton.addEventListener('click', totalBill);
+submitButton.addEventListener('click', function(){totalBill(tipInt, billInt)}); //write 'function'(){call function w/ parameters}
 
